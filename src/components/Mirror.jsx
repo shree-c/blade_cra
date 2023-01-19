@@ -1,10 +1,10 @@
 // import html_to_components from 'html-react-parser'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { to_html } from '../blade_to_html.mjs'
 import parser from '../blade_grammar'
 import html_to_components from 'html-react-parser'
 import Editor from '@monaco-editor/react'
-
+import highlighter from '../highlighter.js'
 
 export default function Mirror() {
   const [htmlString, setHtmlString] = useState('')
@@ -13,6 +13,7 @@ export default function Mirror() {
   (p) [] {
     hello world;
   }`)
+  const editorRef = useRef(null)
 
   useEffect(() => {
     blade_change(blade_string)
@@ -28,14 +29,29 @@ export default function Mirror() {
     }
   }
 
+  function handleEditorDidMount(editor, monaco) {
+    editorRef.current = editor
+    monaco.languages.register({ id: 'blade' })
+    monaco.languages.setMonarchTokensProvider('blade', highlighter
+    )
+
+  }
+
+  function handleClick() {
+    console.log(editorRef.current.getValue())
+  }
+
   return (
     <div id='mirror'>
+      <button onClick={handleClick}>click me</button>
       <Editor
         value={blade_string}
+        theme="vs-dark"
+        language='blade'
         onChange={blade_change}
         height="90vh"
         width="400px"
-
+        onMount={handleEditorDidMount}
       />
       {showHtml ?
         <div id='html_renderer'>{html_to_components(htmlString)}</div>

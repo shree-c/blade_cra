@@ -10,7 +10,7 @@ body {
 
 #html_renderer {
   width: 50%;
-  outline: 1px solid blue;
+  outline: 1px solid rgb(64, 175, 202);
   margin-left: 10px;
 }
 
