@@ -1,0 +1,8 @@
+#mirror {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#mirror>* {
+  height: 70vh;
+}

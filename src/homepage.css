@@ -1,0 +1,139 @@
+/* https://coolors.co/ffd92e-5aa9e6-7fc8f8-ff6392-1affd5 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary-accent-color: #ffd92e;
+  --background-primary-accent-color: #20232a;
+  --background-secondary-accent-color: #282c34;
+}
+
+body {
+  margin: 0;
+  font-family: roboto, sans;
+}
+
+#logo {
+  color: var(--primary-accent-color);
+  font-size: 3rem;
+}
+
+nav {
+  background-color: var(--background-primary-accent-color);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+nav .right ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav .right ul li {
+  margin-left: 30px;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  background: var(--background-secondary-accent-color);
+  color: #fff
+}
+
+
+#hero h1 {
+  font-size: 3rem;
+  color: var(--primary-accent-color);
+  font-weight: 400;
+}
+
+#hero p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+#features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 50px 0;
+}
+
+#features div {
+  max-width: 430px;
+}
+
+#features h2 {
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+#features p {
+  font-size: 1rem
+}
+
+#inspiration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  background-color: var(--background-secondary-accent-color);
+  align-items: center;
+  padding: 50px 0;
+}
+
+#inspiration img {
+  width: 400px;
+  box-shadow: 0px 0px 20px rgb(66, 66, 66);
+}
+
+footer {
+  padding: 30px 0;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+footer ul li {
+  margin-right: 30px;
+}
+
+#cover {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+.navlinks {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navlinks:hover {
+  color: var(--primary-accent-color)
+}
+
+.selected {
+  color: var(--primary-accent-color);
+}
+
+#trybutton {
+  padding: 15px 25px;
+  font-size: 20px;
+  background-color: var(--primary-accent-color);
+  border: none;
+  line-height: 23px;
+}
+
+#trybutton:hover {
+  background-color: #ffffff;
+}
+
+.routerlink:hover {
+  cursor: pointer
+}
