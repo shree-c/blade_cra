@@ -1,17 +1,18 @@
 import { useState, useEffect, useRef } from 'react'
+import parser from '../parser.js'
 import { to_html } from '../blade_to_html.mjs'
-import parser from '../blade_grammar'
-import html_to_components from 'html-react-parser'
 import Editor from '@monaco-editor/react'
 import highlighter from '../highlighter.js'
 import '../try.css'
+import Pages from './Pages.jsx'
 
 export default function Mirror() {
   const [htmlString, setHtmlString] = useState('')
-  const [blade_string, setBlade_string] = useState(`
-  (p) [] {
-    hello world;
-  }`)
+  const [blade_string, setBlade_string] = useState(`-ul-
+  -li- item 1 -/li-
+  -li- item 2 -/li-
+  -li- item 3 -/li-
+-/ul-`)
   const editorRef = useRef(null)
 
   useEffect(() => {
@@ -22,9 +23,11 @@ export default function Mirror() {
     try {
       const ast = parser.parse(e)
       setBlade_string(e)
-      setHtmlString(to_html(ast))
+      const htmlstr = to_html(ast)
+      setHtmlString(htmlstr)
+      console.log(htmlstr)
     } catch (e) {
-      console.log(new Date().toLocaleTimeString(), e)
+      // console.log(new Date().toLocaleTimeString(), e)
     }
   }
 
@@ -46,7 +49,9 @@ export default function Mirror() {
           onChange={blade_change}
           onMount={handleEditorDidMount}
         />
-        <div id='html_renderer'>{html_to_components(htmlString)}</div>
+        <div id='html_renderer'>
+          <Pages htmlString={htmlString} />
+        </div>
       </div>
     </>
   )
