@@ -9,9 +9,11 @@ function Root() {
     if (location.pathname === '/try') {
       settryNavClass(['navlinks', 'selected'])
       setdocsNavClass(['navlinks'])
-    }
-    if (location.pathname === '/docs') {
+    } else if (location.pathname === '/docs') {
       setdocsNavClass(['navlinks', 'selected'])
+      settryNavClass(['navlinks'])
+    } else {
+      setdocsNavClass(['navlinks'])
       settryNavClass(['navlinks'])
     }
   }, [location])
