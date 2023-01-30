@@ -4,7 +4,7 @@ export default {
 
   tokenizer: {
     root: [
-      [/(-|-\/)(\w+)(-)/, ['delimitor', 'keyword', 'delimitor']]
+      [/(-|-\/)([#\w]+)(-)/, ['delimitor', 'keyword', 'delimitor']]
     ]
   }
 };

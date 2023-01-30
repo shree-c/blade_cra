@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'cm';
-  src: url('./assets/computer-modern/cmunrm.ttf');
+  src: url('../assets/computer-modern/cmunrm.ttf');
 }
 
 #mirror {
@@ -20,7 +20,7 @@
 }
 
 .page {
-  background-image: url('./assets/paper2.png');
+  background-image: url('../assets/paper2.png');
   background-repeat: repeat;
   margin: 10px 30px;
   width: 21cm;

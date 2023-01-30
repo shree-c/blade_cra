@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom'
+import list_code from '../assets/code_list.png'
+import list_render from '../assets/list_render.png'
+import h_and_p_render from '../assets/handprender.png'
+import h_and_p_code from '../assets/handpcode.png'
 function HomePageBody() {
   return (
     <>
@@ -33,11 +37,21 @@ function HomePageBody() {
       </section>
 
       <section id="inspiration">
-        <div id="img">
-          <img src="https://miro.medium.com/max/720/1*jdYVo6bXEechZsQQk-N8CA.webp" />
+        <div className="img_block">
+          <div id="img">
+            <img src={list_code} />
+          </div>
+          <div id="doc_img">
+            <img src={list_render} />
+          </div>
         </div>
-        <div id="doc_img">
-          <img src="https://s3.amazonaws.com/libapps/accounts/109251/images/Screen_Shot_2017-01-06_at_4.18.48_PM.png" />
+        <div className="img_block">
+          <div id="img">
+            <img src={h_and_p_code} />
+          </div>
+          <div id="doc_img">
+            <img src={h_and_p_render} />
+          </div>
         </div>
       </section>
       <footer>

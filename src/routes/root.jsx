@@ -1,4 +1,4 @@
-import '../homepage.css'
+import '../css/homepage.css'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 function Root() {

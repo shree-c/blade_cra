@@ -77,12 +77,20 @@ nav .right ul li {
 }
 
 #inspiration {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
   background-color: var(--background-secondary-accent-color);
   align-items: center;
   padding: 50px 0;
+}
+
+#inspiration>.img_block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  justify-items: center;
+  align-items: center;
+  height: 290px;
 }
 
 #inspiration img {

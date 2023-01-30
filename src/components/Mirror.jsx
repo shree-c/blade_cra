@@ -3,7 +3,7 @@ import parser from '../parser.js'
 import { to_html } from '../blade_to_html.mjs'
 import Editor from '@monaco-editor/react'
 import highlighter from '../highlighter.js'
-import '../try.css'
+import '../css/try.css'
 import Pages from './Pages.jsx'
 
 export default function Mirror() {
