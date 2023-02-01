@@ -46,6 +46,7 @@ export default function Mirror() {
           value={blade_string}
           theme="vs-dark"
           language='blade'
+          height={500}
           onChange={blade_change}
           onMount={handleEditorDidMount}
         />

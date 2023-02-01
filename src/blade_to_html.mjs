@@ -29,6 +29,7 @@ const tag_to_style_map = {
   'spt': 'padding-top',
   'spr': 'padding-right',
   'spb': 'padding-bottom',
+  'sta': 'text-align'
 }
 
 function key_value_style(key, value) {
