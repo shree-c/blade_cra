@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/blade_cra/static/css/main.f2719589.css",
-    "main.js": "/blade_cra/static/js/main.5986ce44.js",
+    "main.js": "/blade_cra/static/js/main.9954bf23.js",
     "static/media/cmunrm.ttf": "/blade_cra/static/media/cmunrm.8ff5cee913df84291549.ttf",
     "static/media/handprender.png": "/blade_cra/static/media/handprender.15e987f3234bd237b338.png",
     "static/media/list_render.png": "/blade_cra/static/media/list_render.3e2313bc7b9856a6a179.png",
     "static/media/handpcode.png": "/blade_cra/static/media/handpcode.bfc2679662877e7f8c27.png",
     "index.html": "/blade_cra/index.html",
     "main.f2719589.css.map": "/blade_cra/static/css/main.f2719589.css.map",
-    "main.5986ce44.js.map": "/blade_cra/static/js/main.5986ce44.js.map"
+    "main.9954bf23.js.map": "/blade_cra/static/js/main.9954bf23.js.map"
   },
   "entrypoints": [
     "static/css/main.f2719589.css",
-    "static/js/main.5986ce44.js"
+    "static/js/main.9954bf23.js"
   ]
 }
