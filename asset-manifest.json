@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "https://shree-c.github.io/blade_cra/static/css/main.2020d803.css",
-    "main.js": "https://shree-c.github.io/blade_cra/static/js/main.c4c04dbd.js",
-    "static/media/cmunrm.ttf": "https://shree-c.github.io/blade_cra/static/media/cmunrm.8ff5cee913df84291549.ttf",
-    "static/media/handprender.png": "https://shree-c.github.io/blade_cra/static/media/handprender.15e987f3234bd237b338.png",
-    "static/media/list_render.png": "https://shree-c.github.io/blade_cra/static/media/list_render.3e2313bc7b9856a6a179.png",
-    "static/media/handpcode.png": "https://shree-c.github.io/blade_cra/static/media/handpcode.bfc2679662877e7f8c27.png",
-    "index.html": "https://shree-c.github.io/blade_cra/index.html",
-    "main.2020d803.css.map": "https://shree-c.github.io/blade_cra/static/css/main.2020d803.css.map",
-    "main.c4c04dbd.js.map": "https://shree-c.github.io/blade_cra/static/js/main.c4c04dbd.js.map"
+    "main.css": "/blade_cra/static/css/main.f2719589.css",
+    "main.js": "/blade_cra/static/js/main.9954bf23.js",
+    "static/media/cmunrm.ttf": "/blade_cra/static/media/cmunrm.8ff5cee913df84291549.ttf",
+    "static/media/handprender.png": "/blade_cra/static/media/handprender.15e987f3234bd237b338.png",
+    "static/media/list_render.png": "/blade_cra/static/media/list_render.3e2313bc7b9856a6a179.png",
+    "static/media/handpcode.png": "/blade_cra/static/media/handpcode.bfc2679662877e7f8c27.png",
+    "index.html": "/blade_cra/index.html",
+    "main.f2719589.css.map": "/blade_cra/static/css/main.f2719589.css.map",
+    "main.9954bf23.js.map": "/blade_cra/static/js/main.9954bf23.js.map"
   },
   "entrypoints": [
-    "static/css/main.2020d803.css",
-    "static/js/main.c4c04dbd.js"
+    "static/css/main.f2719589.css",
+    "static/js/main.9954bf23.js"
   ]
 }
