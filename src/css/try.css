@@ -29,6 +29,23 @@
   ;
 }
 
+#options_bar {
+  background-color: #7FC8F8;
+  padding: 10px;
+}
+
+#options_bar button {
+  padding: 10px;
+  background-color: #FF6392;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#options_bar button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
 @media (max-width: 500px) {
   #editor {
     height: 800px;

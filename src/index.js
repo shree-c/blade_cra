@@ -1,5 +1,4 @@
 import React from 'react'
-import App from './routes/App'
 import ReactDOM from 'react-dom/client'
 import Root from './routes/root'
 import ErrorPage from './routes/error-page'
@@ -9,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom"
 import HomePageBody from './components/HomePageBody'
+import Mirror from './components/Mirror'
 
 
 const router = createBrowserRouter([
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/try",
-        element: <App />,
+        element: <Mirror />,
         errorElement: <ErrorPage />
       }
     ]
